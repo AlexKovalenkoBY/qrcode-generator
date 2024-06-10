@@ -11,7 +11,7 @@ import { color } from '../lib/colors'
 const localQRCodeValue = computed(() => {
   if (qrcodeValue.value.length > 0) return qrcodeValue.value
 
-  return 'QRCode Generator, by Mateus Felipe <contact@mateusf.com>.'
+  return 'QRCode Generator'
 })
 
 const qrcodeCanvas = ref<HTMLCanvasElement>()
@@ -21,7 +21,7 @@ const format = ref('PNG')
 
 const options = {
   margin: 0,
-  width: 320,
+  width: 120,
   color
 }
 
